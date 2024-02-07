@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.oamk_mobilenative_assignment6_oliver_kern.composables.ScaffoldApp
 import com.example.oamk_mobilenative_assignment6_oliver_kern.ui.theme.Oamk_mobileNative_assignment6_oliver_kernTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,30 +18,16 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Oamk_mobileNative_assignment6_oliver_kernTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
+                ScaffoldApp()
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun Preview() {
     Oamk_mobileNative_assignment6_oliver_kernTheme {
-        Greeting("Android")
+        ScaffoldApp()
     }
 }
