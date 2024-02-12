@@ -1,6 +1,9 @@
 package com.example.oamk_mobilenative_assignment6_oliver_kern.composables
 
 import androidx.compose.runtime.Composable
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 
 @Composable
 fun ScaffoldApp() {
